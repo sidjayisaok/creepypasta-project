@@ -1,0 +1,102 @@
+img {
+  width: 110%;
+}
+
+body {
+  background: #242122;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background: #242122;
+}
+
+#skull {
+  display:block;
+  width: 400px;
+  height: 545px;
+  margin: auto;
+}
+
+polygon {
+  stroke: #dbdad7;
+  stroke-width: 1px;
+}
+
+#skull:hover #jaw {
+  transform-origin: top center;
+  animation: jabber .35s ease infinite;
+}
+
+@keyframes jabber { 
+  0%, 50%, 100% { transform: rotateZ(0deg) translateY(0px); }
+  33% { top: 1px; transform: rotateZ(-.5deg) translateY(10px); }
+  66% { top: 1px; transform: rotateZ(.5deg) translateY(8px); }
+}
+
+#header {
+    border-radius: 25px;
+    background-image:url('http://i.imgur.com/YrBUhNh.jpg');
+	  text-align:center;
+    font-family: 'Creepster', cursive;
+    font-size: 150px;
+    padding:100px;
+    margin: 20px;
+}
+#bs-example-navbar-collapse-1 {
+  font-family: 'Creepster', cursive;
+}
+p{
+	font-family: 'Creepster', cursive;
+}
+
+* {
+  color: black;
+  box-sizing: border-box;
+}
+.container {
+  padding: 1em;
+  margin: 80px;
+  align-items: center;
+}
+form {
+  align-items:center;
+  }
+input {
+  align-items: center;
+  display: block;
+  margin-bottom: 1em;
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  transition: all ease-in-out 300ms;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 3px 1px red;
+  }
+}
+
+input[name="title"] {
+  background-image: url("http://i.imgur.com/tD2pVxY.png");
+}
+input[name="location"] {
+    background-image: url("http://i.imgur.com/tD2pVxY.png");
+}
+input[name="year"] {
+    background-image: url("http://i.imgur.com/tD2pVxY.png");
+}
+.btn-submit, input {
+  background-color: #34373C;
+  padding: .5em 2em;
+  border: 1px solid #777;
+  border-radius: .3em;
+  font-size: 2.5em;
+  font-family: 'Creepster', cursive;
+  color: black;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 3px 2px 
+    red;
+  }
+}
