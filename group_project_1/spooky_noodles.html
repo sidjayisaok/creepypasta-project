@@ -1,7 +1,7 @@
 <head>
 <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">	
+     integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="spooky_noodles.css">
@@ -24,11 +24,15 @@
 <img src="http://i.imgur.com/wtby8rh.png" alt="Image" border="0" /></a>
 </div>
 <div class="container">
+  <div id="buttons" class="text-center"></div>
+  <div id="moviePoster" class="text-center"></div>
+  <div id="movieWiki" class="text-center"></div>
+
 	<div class="text-center col-sm-6">
   <form action="#">
-    <input class="input-title" type="text" name="title" placeholder="Title"/>
-    <input type="text" name="location"placeholder="Location"/>
-    <input type="text" name="year"placeholder="Year"/>
+    <input class="input-title" type="text" name="title" placeholder="Movie"/>
+    <input type="text" name="location"placeholder="wiki"/>
+    <input type="text" name="year"placeholder="GIF"/>
     <button class="btn-submit">Submit</button>
   </form>
 </div>
@@ -36,14 +40,14 @@
 <p>
 <div id="container">
   <svg id="skull">
-    
+
     <!-- left eye -->
     <polygon points="131,177 138,146 155,245 z" fill="#000" />
     <polygon points="63,190 138,146 131,177 z" fill="#030303" />
     <polygon points="63,190 131,177 155,245 z" fill="#000" />
     <polygon points="63,190 155,245 98,259 z" fill="#000" />
-    <polygon points="63,190 115,259 59,266 z" fill="#080805" /> 
-    
+    <polygon points="63,190 115,259 59,266 z" fill="#080805" />
+
     <!-- right eye -->
     <polygon points="219,209 239,150 240,210 z" fill="#000" />
     <polygon points="219,209 240,210 260,253 z" fill="#000" />
@@ -53,7 +57,7 @@
     <polygon points="297,198 314,166 330,247 z" fill="#000" />
     <polygon points="240,210 239,150 297,198 z" fill="#000" />
     <polygon points="239,150 314,166 297,198 z" fill="#000" />
-    
+
     <!-- nose -->
     <polygon points="152,285 198,240 191,285 z" fill="#1d1e1a" />
     <polygon points="152,285 191,285 157,354 z" fill="#1d1e1a" />
@@ -63,7 +67,7 @@
     <polygon points="191,285 213,280 259,353 z" fill="#1d1e1a" />
     <polygon points="213,280 237,277 259,353 z" fill="#2e2e2c" />
     <polygon points="213,280 198,240 237,277 z" fill="#2e2e2c" />
-    
+
     <!-- jaw -->
     <g id="jaw">
     <polygon points="58,355 81,428 74,482 z" fill="#b6b5b1" />
@@ -81,13 +85,13 @@
     <polygon points="301,410 340,340 322,464 z" fill="#898782" />
     <polygon points="285,530 322,464 319,492 z" fill="#74736e" />
     </g>
-    
+
     <!-- base -->
     <polygon points="45,85 58,73 27,186 z" fill="#dedddb" />
     <polygon points="27,186 58,73 63,203 z" fill="#b6b4af" />
     <polygon points="27,186 63,203 61,228 z" fill="#b7b6b2" />
     <polygon points="27,186 61,228 50,260 z" fill="#b7b6b2" />
-    <polygon points="27,186 50,260 36,280 z" fill="#b7b6b2" />   
+    <polygon points="27,186 50,260 36,280 z" fill="#b7b6b2" />
     <polygon points="314,166 357,112 335,174 z" fill="#8f8e89" />
     <polygon points="314,166 335,174 340,200 z" fill="#969591" />
     <polygon points="335,174 357,112 346,249 z" fill="#989792" />
@@ -101,7 +105,7 @@
     <polygon points="293,279 330,247 350,306 z" fill="#5b5b56" />
     <polygon points="293,279 350,306 259,353 z" fill="#4b4b46" />
     <polygon points="237,277 293,279 259,353 z" fill="#4f4d49" />
-    <polygon points="219,209 293,279 237,277 z" fill="#393934" />  
+    <polygon points="219,209 293,279 237,277 z" fill="#393934" />
     <polygon points="198,240 219,209 237,277 z" fill="#62625e" />
     <polygon points="180,219 219,209 198,240 z" fill="#b4b3af" />
     <polygon points="237,115 239,150 314,166 z" fill="#53524f" />
@@ -113,7 +117,7 @@
     <polygon points="40,265 63,190 59,266 z" fill="#c1c0bd" />
     <polygon points="16,295 40,325 16,334 z" fill="#d7d7d4" />
     <polygon points="16,295 40,265 59,266 40,325 z" fill="#c8c7c4" />
-    <polygon points="59,266 152,285 157,354 z" fill="#787973" />    
+    <polygon points="59,266 152,285 157,354 z" fill="#787973" />
     <polygon points="40,325 157,354 104,354 z" fill="#7f7f7a" />
     <polygon points="104,354 157,354 135,412 z" fill="#b6b5b0" />
     <polygon points="135,412 157,354 205,410  z" fill="#898883" />
@@ -138,16 +142,152 @@
     <polygon points="114,55 140,5 196,9 z" fill="#999894" />
     <polygon points="114,55 196,9 237,115 z" fill="#97958f" />
     <polygon points="138,146 190,175 146,242 z" fill="#676662" />
-    
+
   </svg>
 </div>
 </p>
 
 <footer>
-        
+
  <p class="copyright text-muted text-center collapse navbar-collapse">Copyright &copy; Spooky Noodles 2016
- </p> 
-         
-    </footer>
+ </p>
+
+</footer>
+
+<script src='http://code.jquery.com/jquery-2.1.3.min.js'></script>
+<script>
+
+ $(document).ready(function(){
+
+
+     //in case we need to add in a search function later
+     //var movieOriginal = $('#movie-input').val();
+     //lodash fix for search results
+     //var movie = _.startCase(movieOriginal);
+
+
+  var categories =["The Blair Witch Project", "Chupacabra", "Banshee", "The Jersey Devil", "Kelpie", "Demons", "La Llorona", "Vengeful Ghost", "Mohan", "Bunny Man", "Supernatural Legends", "Brazilian Folklore", "Mexican Folklore"];
+
+   function makeButtons(){
+     //$('#buttons').empty();
+     for(var i=0; i < categories.length; i++){
+       var buttons = $("<button>");
+       buttons.addClass('btn-submit');
+       buttons.data('let', categories[i]);
+       buttons.text(categories[i]);
+       $("#buttons").append(buttons);
+   };
+   }
+
+   makeButtons();
+
+   $("#buttons").unbind().on('click', 'button', function(){
+     console.log("worked");
+     var movie = $(this).text();
+     console.log(movie);
+
+
+     var imdbURL = "http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&r=json";
+
+     //IMDB API call
+     $.ajax({
+       url: imdbURL,
+       method: 'GET'
+     })
+     .done(function(response) {
+       //add divs for these
+       $("#movieTitle").html(response.Title);
+       $("#movieActors").html(response.Actors);
+       $("#movieRated").html(response.Rated);
+       $("#movieRelease").html(response.Released);
+       $("#movieRuntime").html(response.Runtime);
+       $("#movieRating").html(response.imdbRating);
+       $("#movieAwards").html(response.Awards);
+       //grabbing pictures is a bit more complicated
+       var imageUrl = response.Poster;
+       var img = $("<img>");
+       img.attr('src', imageUrl);
+       img.attr('alt', 'poster');
+       $("#moviePoster").empty();
+       $('#moviePoster').prepend(img);
+       });
+
+     //wikipedia API implementation
+     var wikiURL ="http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=" + movie + "&callback=?";
+
+         $.ajax({
+             method: "GET",
+             url: wikiURL,
+             contentType: "application/json; charset=utf-8",
+             async: false,
+             dataType: "jsonp",
+             success: function (data, textStatus, jqXHR) {
+               $("#movieWiki").empty();
+                 var markup = data.parse.text["*"];
+                 var div = $("<div>").html(markup);
+                 // remove links as they will not work
+                 div.find('a').each(function() {
+                $(this).replaceWith($(this).html());
+              });
+             // remove any references
+             div.find('sup').remove();
+             // remove cite error
+             div.find('.mw-ext-cite-error').remove();
+             //final wiki data scrape
+             $("#movieWiki").html($(div).find('p'));
+             //in case wikipedia returns too little info, default to IMDB
+             if($("#movieWiki").text().length <= 100) {
+               $("#movieWiki").empty();
+               $.ajax({
+                 url: imdbURL,
+                 method: 'GET'
+               })
+               .done(function(response){
+                 $("#movieWiki").html(response.Plot);
+               });
+             }
+           },
+           error: function (errorMessage) {
+             }
+           });
+
+     //giphy api call
+     var giphyURL = "http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=" + movie;
+
+       $.ajax({
+         url: giphyURL,
+         method: 'GET'
+       })
+       .done(function(response) {
+           var imageMP4 = response.data.image_mp4_url
+           $('#moviePoster').on('click', 'img', function(){
+             var giphyVideo = $("<video>");
+             var p = $("<p>");
+             giphyVideo.attr('src', imageMP4);
+             giphyVideo.attr('type', 'video/MP4');
+             giphyVideo.prop('autoplay', true);
+             giphyVideo.prop('loop', true);
+             giphyVideo.prop('controls', true);
+             $("#moviePoster").empty();
+             $("#moviePoster").prepend(p);
+             $('#moviePoster').prepend(giphyVideo);
+           });
+         });
+
+    return false;
+
+   });
+
+   //function to execute the button
+   $(document).on('click', 'input', workButtons);
+
+   makeButtons();
+
+ });
+
+
+
+
+</script>
 
  </body>

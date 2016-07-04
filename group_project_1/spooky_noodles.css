@@ -6,6 +6,10 @@ body {
   background: #242122;
 }
 
+button{
+  margin: 2.5%;
+}
+
 #container {
   width: 100%;
   height: 100%;
@@ -29,7 +33,7 @@ polygon {
   animation: jabber .35s ease infinite;
 }
 
-@keyframes jabber { 
+@keyframes jabber {
   0%, 50%, 100% { transform: rotateZ(0deg) translateY(0px); }
   33% { top: 1px; transform: rotateZ(-.5deg) translateY(10px); }
   66% { top: 1px; transform: rotateZ(.5deg) translateY(8px); }
@@ -41,8 +45,8 @@ polygon {
 	  text-align:center;
     font-family: 'Creepster', cursive;
     font-size: 150px;
-    padding:100px;
-    margin: 20px;
+    padding:10%;
+    margin: 5%;
 }
 #bs-example-navbar-collapse-1 {
   font-family: 'Creepster', cursive;
@@ -77,15 +81,10 @@ input {
   }
 }
 
-input[name="title"] {
+input[name="title"], input[name="location"], input[name="year"] {
   background-image: url("http://i.imgur.com/tD2pVxY.png");
 }
-input[name="location"] {
-    background-image: url("http://i.imgur.com/tD2pVxY.png");
-}
-input[name="year"] {
-    background-image: url("http://i.imgur.com/tD2pVxY.png");
-}
+
 .btn-submit, input {
   background-color: #34373C;
   padding: .5em 2em;
@@ -94,9 +93,13 @@ input[name="year"] {
   font-size: 2.5em;
   font-family: 'Creepster', cursive;
   color: black;
+  background-image: url("http://i.imgur.com/tD2pVxY.png");
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
   &:focus {
     outline: 0 !important;
-    box-shadow: 0 0 3px 2px 
+    box-shadow: 0 0 3px 2px
     red;
   }
 }
