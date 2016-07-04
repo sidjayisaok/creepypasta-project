@@ -1,2 +1,11 @@
 # creepypasta-project
-Project Title: Scary Noodles Base  Team Members: Stephanie Greco, Sid Johnston, James Yu  Project Description:   Create a seamless integration between Reddit, Youtube, Rotten Tomatoes/IMDB, Spotify** and Google Maps** API concentrated on “Creepy Pasta,” which is a Reddit database associated with myths, urban legends, and all things in general that go bump at night!  Users would be able to search the Creepy Pasta database, which will pull reddit threads associated with a specified urban legend/horror subject.  In addition to the Reddit thread, movies associated with the topic will be suggested below with videos imbedded into the site utilizing Youtube’s API.   A link will be provided next to the movie trailers to provide additional information about the movies from Rotten Tomatoes and IMDB, and the soundtracks of the movies will be included from Spotify.  In addition to all the interactive media, Google maps will provide a general location associated with the events/urban legend, which will provide an opportunity for those who are adventurous to plan out a trip to the site of the occurrence! API’s to be used:  [13:02]   GoogleMaps, Reddit, Youtube,Rotten Tomatoes/Imdb, **Giphy, **Spotify  (Tasks) Sid: Github czar; reddit, google maps maker   James: movie trailers, spotify soundtrack, giphy Steph: banner, css, user interface
+Project Title: Spooky Noodles 
+
+Base  Team Members: Stephanie Greco, Sid Johnston, James Yu  
+
+Project Description: a database presenting urban legends and mysterious stories for a good night's worth of chill. The database combines Wikipedia's know-how with IMDB and Giphy for a casual experience on the dark side of the human soul.
+
+Tasks:
+Sid - Script kiddie/copypasta extraordinaire
+Steph- HTML/CSS transmogifier and feeder of only cute kittens
+James: 
