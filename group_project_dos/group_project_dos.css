@@ -1,0 +1,142 @@
+img {
+  width: 50%;
+}
+
+video{
+  height: 25%;
+}
+
+.title, .title2 {
+  color:white;
+  text-shadow:
+  4px 4px 1px #D3D3D3,
+  4px 6px 1px #C0C0C0;
+  text-align: right;
+}
+
+body {
+  background: #E7A79E;
+  font-family: 'Spicy Rice', cursive;
+  text-align: justify;
+  color: #504A4B;
+}
+
+button{
+  margin-bottom: : 2.5%;
+  margin-left: 2%;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background: #E7A79E;
+}
+
+#skullTop {
+  display:block;
+  margin: auto;
+  float:left;
+  margin: 2.5%;
+  width: 17.5%;
+}
+
+#skullBottom {
+  display:block;
+  width: 400px;
+  height: 545px;
+  margin: auto;
+}
+
+polygon {
+  stroke: #dbdad7;
+  stroke-width: 1px;
+}
+
+#skullBottom:hover #jaw {
+  transform-origin: top center;
+  animation: jabber .35s ease infinite;
+}
+
+@keyframes jabber {
+  0%, 50%, 100% { transform: rotateZ(0deg) translateY(0px); }
+  33% { top: 1px; transform: rotateZ(-.5deg) translateY(10px); }
+  66% { top: 1px; transform: rotateZ(.5deg) translateY(8px); }
+}
+
+#header {
+    border-radius: 25px;
+    background-color: #A6E0E0;
+	  font-family: 'Spicy Rice', cursive;
+    font-size: 60px;
+    padding: 2%;
+    margin-top: 5%;
+}
+#bs-example-navbar-collapse-1 {
+  font-family: 'Spicy Rice', cursive;
+}
+
+* {
+  color: black;
+  box-sizing: border-box;
+}
+.container {
+  padding: 1em;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+form {
+  align-items:center;
+  }
+
+input {
+  align-items: center;
+  display: block;
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  transition: all ease-in-out 300ms;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 3px 1px red;
+  }
+}
+
+input[name="title"], input[name="location"], input[name="year"] {
+  background-image: url("http://i.imgur.com/fWLfmKp.jpg");
+  font-size: initial;
+  float: right;
+}
+
+#submitButton{
+  font-size: initial;
+  float: right;
+}
+
+.btn-submit, input {
+  background-color: #EDE2CE;
+  padding: .5em 2em;
+  margin: 2%;
+  border: 1px solid #777;
+  border-radius: .3em;
+  font-family: 'Spicy Rice', cursive;
+  color: black;
+  background-image: url("http://i.imgur.com/fWLfmKp.jpg");
+  background-size: 1.2em;
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
+  &:focus {
+    outline: 0 !important;
+    box-shadow: 0 0 3px 2px
+    red;
+  }
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
