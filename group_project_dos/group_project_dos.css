@@ -1,27 +1,29 @@
 img {
-  width: 30%;
+  width: 50%;
 }
-.title {
-       color:white;
-       text-shadow:
-       4px 4px 1px #D3D3D3,
-       4px 6px 1px #C0C0C0;
-       text-align: center;
+
+video{
+  height: 25%;
 }
-.title2 {
-       color:white;
-       text-shadow:
-       4px 4px 1px #D3D3D3,
-       4px 6px 1px #C0C0C0;
-       text-align: right;
+
+.title, .title2 {
+  color:white;
+  text-shadow:
+  4px 4px 1px #D3D3D3,
+  4px 6px 1px #C0C0C0;
+  text-align: right;
 }
 
 body {
   background: #E7A79E;
+  font-family: 'Spicy Rice', cursive;
+  text-align: justify;
+  color: #504A4B;
 }
 
 button{
-  margin: 2.5%;
+  margin-bottom: : 2.5%;
+  margin-left: 2%;
 }
 
 #container {
@@ -30,7 +32,15 @@ button{
   background: #E7A79E;
 }
 
-#skull {
+#skullTop {
+  display:block;
+  margin: auto;
+  float:left;
+  margin: 2.5%;
+  width: 17.5%;
+}
+
+#skullBottom {
   display:block;
   width: 400px;
   height: 545px;
@@ -42,7 +52,7 @@ polygon {
   stroke-width: 1px;
 }
 
-#skull:hover #jaw {
+#skullBottom:hover #jaw {
   transform-origin: top center;
   animation: jabber .35s ease infinite;
 }
@@ -57,18 +67,12 @@ polygon {
     border-radius: 25px;
     background-color: #A6E0E0;
 	  font-family: 'Spicy Rice', cursive;
-    font-size: 150px;
+    font-size: 60px;
     padding: 2%;
-    margin: 5%;
+    margin-top: 5%;
 }
 #bs-example-navbar-collapse-1 {
   font-family: 'Spicy Rice', cursive;
-}
-p{
-	font-family: 'Spicy Rice', cursive;
-  font-size: 30px;
-  text-align: justify;
-  color: #504A4B;
 }
 
 * {
@@ -77,16 +81,18 @@ p{
 }
 .container {
   padding: 1em;
-  margin: 80px;
+  margin-left: 5%;
+  margin-right: 5%;
   align-items: center;
 }
+
 form {
   align-items:center;
   }
+
 input {
   align-items: center;
   display: block;
-  margin-bottom: 1em;
   background-size: 1.2em;
   background-repeat: no-repeat;
   background-position: 2% 50%;
@@ -99,14 +105,21 @@ input {
 
 input[name="title"], input[name="location"], input[name="year"] {
   background-image: url("http://i.imgur.com/fWLfmKp.jpg");
+  font-size: initial;
+  float: right;
+}
+
+#submitButton{
+  font-size: initial;
+  float: right;
 }
 
 .btn-submit, input {
   background-color: #EDE2CE;
   padding: .5em 2em;
+  margin: 2%;
   border: 1px solid #777;
   border-radius: .3em;
-  font-size: 2.5em;
   font-family: 'Spicy Rice', cursive;
   color: black;
   background-image: url("http://i.imgur.com/fWLfmKp.jpg");
@@ -119,5 +132,11 @@ input[name="title"], input[name="location"], input[name="year"] {
     red;
   }
 }
-Status API Training Shop Blog About
-© 2016 GitHub, Inc. Terms Privacy Security Contact Help
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
